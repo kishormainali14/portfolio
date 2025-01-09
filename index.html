@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Coach Landing Page</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #6f65f3;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #1d1ad7;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+    }
+
+    .hero-text {
+      max-width: 60%;
+    }
+
+    .hero-text h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      margin-top: 20px;
+      padding: 15px 30px;
+
+      background-color: #221752;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero-image {
+      position: relative;
+    }
+
+    .hero-image img {
+      width: 400px;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    footer {
+      text-align: center; 
+      padding: 20px;
+      background-color: #2215dd;
+      margin-top: 30px;
+    } 
+     .clock {
+     padding: 4px;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 1em;
+      color: #e7d5d5;
+      
+  }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <div class="clock" id="clock"></div>
+
+  <script>
+      function updateTime() {
+          const clockElement = document.getElementById('clock');
+          const now = new Date();
+          const hours = String(now.getHours()).padStart(2, '0');
+          const minutes = String(now.getMinutes()).padStart(2, '0');
+          const seconds = String(now.getSeconds()).padStart(2, '0');
+          clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+      }
+
+      setInterval(updateTime, 1000);
+      updateTime(); // Initial call to display time immediately
+  </script>
+    <h1>BrightPath Learning</h1>
+    <nav>
+      <div class="sidebar" class="navbar navbar-dark bg-primary">
+        <h3>Menu</h3>
+        <a href="formn.html"><button>Form</button></a>
+        <a href="coursefee.html"><button>About</button></a>
+        <a href="https://nepaledu.org/"><button>Contact</button></a>
+        
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Integrating Progress Tracking</h2>
+      <p>"An engaging platform where learning meets simplicity, offering educational content tailored 
+        to empower curious minds. Perfect for students and learners seeking easy-to-understand resources!".</p>
+        <div>
+     
+      <a href="https://www.w3schools.com/sql/default.asp"><button >Get Free Trial</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="home page photo.jpg " alt=" Coach Image">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jonathon Borolox. All rights reserved.</p>
+  </footer>
+</body>
+</html>
